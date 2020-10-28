@@ -4,7 +4,7 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
-    image: spring_menu/api
+    image: menu_rest/api
     ports: 
       - '8080:8080'
       - '5005:5005'
