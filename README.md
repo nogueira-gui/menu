@@ -33,11 +33,11 @@ $sudo docker pull mysql
 
 3. Create table on database menu_mysql:
 
-Field	    Type	  Null	  Key	          Default
-
-menu_id   int	    NO	    Primary Key	  NULL
-titulo    VARCHAR(100)	  NO		        NULL
-descricao	VARCHAR(150)	  NO		        NULL
+CREATE TABLE MENU (
+	menu_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    titulo VARCHAR(30),
+    descri VARCHAR(200)
+);
 
 
 4. Run this project image: docker-compose up --build --force-recreate 
